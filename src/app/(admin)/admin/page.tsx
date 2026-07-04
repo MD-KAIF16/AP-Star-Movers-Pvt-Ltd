@@ -1,6 +1,6 @@
 "use client";
 
-import { TrendingUp, TrendingDown, Truck, Users, FileText, IndianRupee, LifeBuoy, ChevronRight, ArrowUpRight } from "lucide-react";
+import { TrendingUp, TrendingDown, Truck, Users, FileText, IndianRupee, ChevronRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { mockDashboardStats, mockBookings } from "@/lib/mock-data";

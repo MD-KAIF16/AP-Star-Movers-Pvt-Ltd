@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Truck, MapPin, Phone, CheckCircle2, Clock, User } from "lucide-react";
+import { ArrowLeft, MapPin, Phone, CheckCircle2, Clock, User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { mockBookings, mockTrackingEvents, mockDrivers } from "@/lib/mock-data";

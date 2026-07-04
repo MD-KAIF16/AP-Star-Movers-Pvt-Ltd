@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Truck, MapPin, ArrowRight, Clock, Package, IndianRupee, Star, ChevronRight } from "lucide-react";
+import { Truck, MapPin, ArrowRight, Clock, Package, IndianRupee, ChevronRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { mockCurrentUser, mockBookings, mockNotifications } from "@/lib/mock-data";

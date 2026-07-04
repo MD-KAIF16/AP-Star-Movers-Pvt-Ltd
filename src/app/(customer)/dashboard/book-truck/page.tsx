@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ArrowRight, MapPin, Truck, Package, User, CheckCircle2, Calendar, Clock, Weight, Shield, Loader2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, Truck, Package, User, CheckCircle2, Calendar, Clock, Weight, Loader2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -72,8 +73,8 @@ export default function BookTruckPage() {
           <p className="text-sm text-muted-foreground mt-1">We will assign a vehicle and driver shortly.</p>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="flex gap-3 mt-4">
-          <a href="/dashboard" className="px-6 py-3 rounded-xl bg-muted text-sm font-medium hover:bg-muted/80 transition-colors">Dashboard</a>
-          <a href="/dashboard/tracking/bk-001" className="px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors">Track Shipment</a>
+          <Link href="/dashboard" className="px-6 py-3 rounded-xl bg-muted text-sm font-medium hover:bg-muted/80 transition-colors">Dashboard</Link>
+          <Link href="/dashboard/tracking/bk-001" className="px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors">Track Shipment</Link>
         </motion.div>
       </div>
     );
@@ -211,7 +212,7 @@ export default function BookTruckPage() {
               </div>
               <div className="space-y-2">
                 <Label className="text-sm font-medium">Phone Number</Label>
-                <Input type="tel" placeholder="+91 98765 43210" value={form.contact_phone} onChange={(e) => update("contact_phone", e.target.value)} className="h-12 rounded-xl bg-muted/50 border-border/50" />
+                <Input type="tel" placeholder="+91 7080815294" value={form.contact_phone} onChange={(e) => update("contact_phone", e.target.value)} className="h-12 rounded-xl bg-muted/50 border-border/50" />
               </div>
               <div className="space-y-2">
                 <Label className="text-sm font-medium">Email</Label>

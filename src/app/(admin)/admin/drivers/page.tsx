@@ -1,6 +1,6 @@
 "use client";
 
-import { User, Search, Plus, Phone, Star, MoreHorizontal } from "lucide-react";
+import { User, Search, Plus, Phone, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";

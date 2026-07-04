@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ArrowRight, MessageCircle } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useUIStore } from "@/lib/store/ui-store";
 
@@ -40,25 +39,25 @@ export function MobileCTA() {
           <div className="flex items-center gap-2 p-2 bg-zinc-900/90 backdrop-blur-xl border border-white/10 rounded-[32px] shadow-2xl shadow-black/50">
             <button 
               onClick={() => openBookTruckModal()}
-              className="flex-1 flex items-center justify-center gap-2 h-14 bg-lime-400 text-black rounded-[24px] font-bold text-sm"
+              className="flex-1 flex items-center justify-center gap-2 h-14 bg-orange-400 text-black rounded-[24px] font-bold text-sm"
             >
               Book Truck <ArrowRight className="w-4 h-4" />
             </button>
             
             <a 
-              href="https://wa.me/918048615828"
+              href="https://wa.me/917080815294"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center h-14 w-14 shrink-0 bg-white/10 rounded-[24px] border border-white/5 text-white"
             >
-              <MessageCircle className="w-5 h-5 text-lime-400" />
+              <MessageCircle className="w-5 h-5 text-orange-400" />
             </a>
             
             <a 
-              href="tel:+918048615828"
+              href="tel:+917080815294"
               className="flex items-center justify-center h-14 w-14 shrink-0 bg-white/10 rounded-[24px] border border-white/5 text-white"
             >
-              <Phone className="w-5 h-5 text-lime-400" />
+              <Phone className="w-5 h-5 text-orange-400" />
             </a>
           </div>
         </motion.div>

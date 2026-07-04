@@ -1,6 +1,6 @@
 "use client";
 
-import { User, Mail, Phone, MapPin, Building, Shield, Bell, Key, CreditCard } from "lucide-react";
+import { User, Mail, Phone, MapPin, Warehouse, Shield, Bell, Key, CreditCard } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -22,7 +22,7 @@ export default function SettingsPage() {
       <div className="flex gap-2 overflow-x-auto pb-2 border-b border-border/50">
         {[
           { id: "profile", label: "Profile", icon: User },
-          { id: "company", label: "Company", icon: Building },
+          { id: "company", label: "Company", icon: Warehouse },
           { id: "security", label: "Security", icon: Shield },
           { id: "notifications", label: "Notifications", icon: Bell },
         ].map((tab) => (
@@ -98,7 +98,7 @@ export default function SettingsPage() {
                   <div className="space-y-2">
                     <Label>Company Name</Label>
                     <div className="relative">
-                      <Building className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <Warehouse className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                       <Input defaultValue={mockCurrentUser.company_name} className="pl-10 h-11 bg-muted/50 border-border/50 rounded-xl" />
                     </div>
                   </div>

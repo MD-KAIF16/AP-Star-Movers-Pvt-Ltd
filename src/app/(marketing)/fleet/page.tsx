@@ -1,6 +1,5 @@
 import { AnimatedSection, AnimatedStagger, AnimatedItem } from "@/components/marketing/animated-section";
 import { Truck } from "lucide-react";
-import Image from "next/image";
 
 export const metadata = {
   title: "Our Fleet | A P Star Movers",

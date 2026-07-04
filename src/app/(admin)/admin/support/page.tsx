@@ -1,6 +1,6 @@
 "use client";
 
-import { LifeBuoy, Search, Filter, MoreHorizontal, UserCircle, MessageSquare } from "lucide-react";
+import { Search, MoreHorizontal, UserCircle, MessageSquare } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";

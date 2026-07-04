@@ -1,6 +1,6 @@
 "use client";
 
-import { Receipt, Search, Download, Eye, MoreHorizontal, UserCircle } from "lucide-react";
+import { Search, Download, Eye, MoreHorizontal } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";

@@ -30,7 +30,7 @@ export const fleet: FleetVehicle[] = [
     name: "Tata Ace",
     capacity: "Local / Light",
     desc: "Ideal for intracity and fast local deliveries.",
-    img: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=800&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
     bestFor: "Small parcels, local shifting, intracity goods.",
     advantages: ["Quick navigation in city traffic", "Cost-effective for small loads", "High availability"],
     
@@ -63,7 +63,7 @@ export const fleet: FleetVehicle[] = [
       { q: "Is it suitable for shifting a 1BHK?", a: "Yes, it can comfortably accommodate standard 1BHK items including a fridge, washing machine, and bed (disassembled)." }
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1586864387789-228f2162ce5a?q=80&w=1200&auto=format&fit=crop"
     ]
   },
@@ -71,7 +71,7 @@ export const fleet: FleetVehicle[] = [
     name: "Pickup",
     capacity: "Medium Load",
     desc: "Perfect for fast, medium-load transport.",
-    img: "https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=800&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=800&auto=format&fit=crop",
     bestFor: "FMCG delivery, medium commercial appliances, inter-district.",
     advantages: ["Higher payload than mini-trucks", "Excellent mileage", "Fast intercity transit"],
     
@@ -104,7 +104,7 @@ export const fleet: FleetVehicle[] = [
       { q: "Do you provide tarpaulin covers for open pickups?", a: "Yes, all our open vehicles come equipped with heavy-duty tarpaulins to protect against rain and dust." }
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=1200&auto=format&fit=crop"
     ]
   },
   {
@@ -191,7 +191,7 @@ export const fleet: FleetVehicle[] = [
     name: "20 Feet Container",
     capacity: "Secure Transit",
     desc: "Secure closed container for safe transit.",
-    img: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1519003300449-4244b278ea82?q=80&w=800&auto=format&fit=crop",
     bestFor: "High-value goods, electronics, pharmaceuticals.",
     advantages: ["100% Weatherproof", "High Security & Locked Transit", "Zero Transshipment"],
     
@@ -224,14 +224,14 @@ export const fleet: FleetVehicle[] = [
       { q: "Is it suitable for palletized loading?", a: "Absolutely. 20ft containers are standardized for pallet loading via forklifts from loading docks." }
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1519003300449-4244b278ea82?q=80&w=1200&auto=format&fit=crop"
     ]
   },
   {
     name: "22 Feet Truck",
     capacity: "High Volume",
     desc: "Large volume open transport for heavy cargo.",
-    img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=800&auto=format&fit=crop",
     bestFor: "Pipes, steel, construction materials, large machinery.",
     advantages: ["Easy loading/unloading via crane", "Heavy payload capacity", "Experienced Drivers"],
     
@@ -264,14 +264,14 @@ export const fleet: FleetVehicle[] = [
       { q: "Are multi-axle options available for heavier loads?", a: "Yes, we provide 6-wheeler and 10-wheeler variants of the 22ft truck based on your payload weight." }
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1200&auto=format&fit=crop"
     ]
   },
   {
     name: "32 Feet Container",
     capacity: "Max Volume",
     desc: "Maximum capacity closed container for industrial goods.",
-    img: "https://images.unsplash.com/photo-1616432617985-5854f3ebf68e?q=80&w=800&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?q=80&w=800&auto=format&fit=crop",
     bestFor: "FMCG bulk, automotive parts, e-commerce long haul.",
     advantages: ["Maximum cargo volume", "Double door security", "GPS Tracking & Fully Insured"],
     
@@ -304,7 +304,7 @@ export const fleet: FleetVehicle[] = [
       { q: "Do you provide GPS access for the 32ft container?", a: "Yes, complete API integration and live tracking dashboard access is provided for all 32ft container line-haul movements." }
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1616432617985-5854f3ebf68e?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?q=80&w=1200&auto=format&fit=crop"
     ]
   },
   {

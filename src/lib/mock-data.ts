@@ -20,7 +20,7 @@ export const mockVehicleTypes: VehicleType[] = [
 
 // ---- Current User ----
 export const mockCurrentUser: Profile = {
-  id: "usr-001", role: "CUSTOMER", full_name: "Mohammad Kaif", phone: "+91 98765 43210",
+  id: "usr-001", role: "CUSTOMER", full_name: "Mohammad Kaif", phone: "+91 7080815294",
   email: "kaif@starlogistics.com", company_name: "Star Logistics Pvt Ltd", gst_number: "09AAACR5055K1Z5",
   avatar_url: "", is_active: true, created_at: "2024-01-15T10:00:00Z",
 };
@@ -28,19 +28,19 @@ export const mockCurrentUser: Profile = {
 // ---- Customers ----
 export const mockCustomers: Profile[] = [
   mockCurrentUser,
-  { id: "usr-002", role: "CUSTOMER", full_name: "Priya Sharma", phone: "+91 87654 32109", email: "priya@techcorp.in", company_name: "TechCorp India", gst_number: "07BBBPS1234L1ZP", is_active: true, created_at: "2024-02-20T10:00:00Z" },
-  { id: "usr-003", role: "CUSTOMER", full_name: "Rajesh Gupta", phone: "+91 76543 21098", email: "rajesh@steelworks.com", company_name: "Gupta Steel Works", gst_number: "09CCCPG5678M1Z2", is_active: true, created_at: "2024-03-10T10:00:00Z" },
-  { id: "usr-004", role: "CUSTOMER", full_name: "Anita Verma", phone: "+91 65432 10987", email: "anita@fmcg.co", company_name: "Verma FMCG Distributors", gst_number: "09DDDAV9012N1Z8", is_active: true, created_at: "2024-04-05T10:00:00Z" },
-  { id: "usr-005", role: "CUSTOMER", full_name: "Suresh Yadav", phone: "+91 54321 09876", email: "suresh@buildmart.in", company_name: "BuildMart Construction", gst_number: "09EEESY3456P1Z4", is_active: false, created_at: "2024-05-12T10:00:00Z" },
+  { id: "usr-002", role: "CUSTOMER", full_name: "Priya Sharma", phone: "+91 7080805297", email: "priya@techcorp.in", company_name: "TechCorp India", gst_number: "07BBBPS1234L1ZP", is_active: true, created_at: "2024-02-20T10:00:00Z" },
+  { id: "usr-003", role: "CUSTOMER", full_name: "Rajesh Gupta", phone: "+91 7080815294", email: "rajesh@steelworks.com", company_name: "Gupta Steel Works", gst_number: "09CCCPG5678M1Z2", is_active: true, created_at: "2024-03-10T10:00:00Z" },
+  { id: "usr-004", role: "CUSTOMER", full_name: "Anita Verma", phone: "+91 7080805297", email: "anita@fmcg.co", company_name: "Verma FMCG Distributors", gst_number: "09DDDAV9012N1Z8", is_active: true, created_at: "2024-04-05T10:00:00Z" },
+  { id: "usr-005", role: "CUSTOMER", full_name: "Suresh Yadav", phone: "+91 7080815294", email: "suresh@buildmart.in", company_name: "Global Logistics Hub", gst_number: "09EEESY3456P1Z4", is_active: false, created_at: "2024-05-12T10:00:00Z" },
 ];
 
 // ---- Drivers ----
 export const mockDrivers: Driver[] = [
-  { id: "drv-001", name: "Ramesh Yadav", phone: "+91 99887 76655", license_no: "UP05 20220012345", license_expiry: "2027-06-15", status: "ON_TRIP", rating: 4.8, total_trips: 342, is_verified: true, is_active: true, created_at: "2023-01-10T10:00:00Z" },
-  { id: "drv-002", name: "Sunil Kumar", phone: "+91 88776 65544", license_no: "UP05 20210067890", license_expiry: "2026-12-01", status: "AVAILABLE", rating: 4.5, total_trips: 218, is_verified: true, is_active: true, created_at: "2023-03-15T10:00:00Z" },
-  { id: "drv-003", name: "Vikram Singh", phone: "+91 77665 54433", license_no: "DL01 20230034567", license_expiry: "2028-03-20", status: "AVAILABLE", rating: 4.9, total_trips: 156, is_verified: true, is_active: true, created_at: "2023-06-01T10:00:00Z" },
-  { id: "drv-004", name: "Manoj Tiwari", phone: "+91 66554 43322", license_no: "UP32 20200098765", license_expiry: "2026-09-10", status: "OFF_DUTY", rating: 4.2, total_trips: 89, is_verified: true, is_active: true, created_at: "2023-08-20T10:00:00Z" },
-  { id: "drv-005", name: "Deepak Chauhan", phone: "+91 55443 32211", license_no: "HR06 20220045678", license_expiry: "2027-01-05", status: "ON_TRIP", rating: 4.7, total_trips: 275, is_verified: true, is_active: true, created_at: "2023-02-14T10:00:00Z" },
+  { id: "drv-001", name: "Ramesh Yadav", phone: "+91 7080805297", license_no: "UP05 20220012345", license_expiry: "2027-06-15", status: "ON_TRIP", rating: 4.8, total_trips: 342, is_verified: true, is_active: true, created_at: "2023-01-10T10:00:00Z" },
+  { id: "drv-002", name: "Sunil Kumar", phone: "+91 7080815294", license_no: "UP05 20210067890", license_expiry: "2026-12-01", status: "AVAILABLE", rating: 4.5, total_trips: 218, is_verified: true, is_active: true, created_at: "2023-03-15T10:00:00Z" },
+  { id: "drv-003", name: "Vikram Singh", phone: "+91 7080805297", license_no: "DL01 20230034567", license_expiry: "2028-03-20", status: "AVAILABLE", rating: 4.9, total_trips: 156, is_verified: true, is_active: true, created_at: "2023-06-01T10:00:00Z" },
+  { id: "drv-004", name: "Manoj Tiwari", phone: "+91 7080815294", license_no: "UP32 20200098765", license_expiry: "2026-09-10", status: "OFF_DUTY", rating: 4.2, total_trips: 89, is_verified: true, is_active: true, created_at: "2023-08-20T10:00:00Z" },
+  { id: "drv-005", name: "Deepak Chauhan", phone: "+91 7080805297", license_no: "HR06 20220045678", license_expiry: "2027-01-05", status: "ON_TRIP", rating: 4.7, total_trips: 275, is_verified: true, is_active: true, created_at: "2023-02-14T10:00:00Z" },
 ];
 
 // ---- Vehicles ----
@@ -65,7 +65,7 @@ export const mockBookings: Booking[] = [
     scheduled_pickup: "2024-05-12T09:00:00Z", estimated_delivery: "2024-05-13T18:00:00Z",
     status: "IN_TRANSIT", distance_km: 620, base_amount: 27900, gst_amount: 5022, discount_amount: 0, total_amount: 32922,
     advance_amount: 10000, payment_status: "ADVANCE_PAID",
-    contact_name: "Mohammad Kaif", contact_phone: "+91 98765 43210", created_at: "2024-05-10T14:30:00Z",
+    contact_name: "Mohammad Kaif", contact_phone: "+91 7080815294", created_at: "2024-05-10T14:30:00Z",
   },
   {
     id: "bk-002", tracking_id: "BKG-2024-0157", customer_id: "usr-001", customer: mockCurrentUser,
@@ -75,7 +75,7 @@ export const mockBookings: Booking[] = [
     status: "PENDING", distance_km: 210, base_amount: 7980, gst_amount: 1436, discount_amount: 500, total_amount: 8916,
     scheduled_pickup: "2024-05-12T10:00:00Z",
     advance_amount: 0, payment_status: "PENDING",
-    contact_name: "Mohammad Kaif", contact_phone: "+91 98765 43210", created_at: "2024-05-11T10:00:00Z",
+    contact_name: "Mohammad Kaif", contact_phone: "+91 7080815294", created_at: "2024-05-11T10:00:00Z",
   },
   {
     id: "bk-003", tracking_id: "BKG-2024-0155", customer_id: "usr-001", customer: mockCurrentUser,
@@ -86,7 +86,7 @@ export const mockBookings: Booking[] = [
     scheduled_pickup: "2024-05-08T06:00:00Z", actual_delivery: "2024-05-10T14:00:00Z",
     status: "DELIVERED", distance_km: 1350, base_amount: 74250, gst_amount: 13365, discount_amount: 2000, total_amount: 85615,
     advance_amount: 30000, payment_status: "COMPLETED",
-    contact_name: "Mohammad Kaif", contact_phone: "+91 98765 43210", created_at: "2024-05-06T11:00:00Z",
+    contact_name: "Mohammad Kaif", contact_phone: "+91 7080815294", created_at: "2024-05-06T11:00:00Z",
   },
   {
     id: "bk-004", tracking_id: "BKG-2024-0158", customer_id: "usr-002",
@@ -98,7 +98,7 @@ export const mockBookings: Booking[] = [
     scheduled_pickup: "2024-05-14T08:00:00Z",
     status: "CONFIRMED", distance_km: 2150, base_amount: 81700, gst_amount: 14706, discount_amount: 5000, total_amount: 91406,
     advance_amount: 25000, payment_status: "ADVANCE_PAID",
-    contact_name: "Priya Sharma", contact_phone: "+91 87654 32109", created_at: "2024-05-12T16:00:00Z",
+    contact_name: "Priya Sharma", contact_phone: "+91 7080805297", created_at: "2024-05-12T16:00:00Z",
   },
   {
     id: "bk-005", tracking_id: "BKG-2024-0159", customer_id: "usr-003",
@@ -109,7 +109,7 @@ export const mockBookings: Booking[] = [
     status: "QUOTED", distance_km: 1100, base_amount: 60500, gst_amount: 10890, discount_amount: 0, total_amount: 71390,
     scheduled_pickup: "2024-05-15T09:00:00Z",
     advance_amount: 0, payment_status: "PENDING",
-    contact_name: "Rajesh Gupta", contact_phone: "+91 76543 21098", created_at: "2024-05-13T09:00:00Z",
+    contact_name: "Rajesh Gupta", contact_phone: "+91 7080815294", created_at: "2024-05-13T09:00:00Z",
   },
 ];
 
@@ -118,7 +118,7 @@ export const mockTrackingEvents: TrackingEvent[] = [
   { id: "te-1", booking_id: "bk-001", status: "PENDING", title: "Booking Created", description: "Your booking has been placed successfully.", timestamp: "2024-05-10T14:30:00Z" },
   { id: "te-2", booking_id: "bk-001", status: "CONFIRMED", title: "Booking Confirmed", description: "Your booking has been confirmed by our operations team.", timestamp: "2024-05-10T15:00:00Z" },
   { id: "te-3", booking_id: "bk-001", status: "VEHICLE_ASSIGNED", title: "Vehicle Assigned", description: "Tata Prima 4028.S (UP 70 AT 1234) has been assigned.", location_description: "Prayagraj Depot", timestamp: "2024-05-11T08:00:00Z" },
-  { id: "te-4", booking_id: "bk-001", status: "DISPATCHED", title: "Driver Assigned", description: "Ramesh Yadav (+91 99887 76655) will handle your shipment.", timestamp: "2024-05-11T09:00:00Z" },
+  { id: "te-4", booking_id: "bk-001", status: "DISPATCHED", title: "Driver Assigned", description: "Ramesh Yadav (+91 7080805297) will handle your shipment.", timestamp: "2024-05-11T09:00:00Z" },
   { id: "te-5", booking_id: "bk-001", status: "PICKUP_STARTED", title: "Pickup Started", description: "Driver is en route to pickup location.", location_description: "Prayagraj", timestamp: "2024-05-12T08:30:00Z" },
   { id: "te-6", booking_id: "bk-001", status: "GOODS_LOADED", title: "Goods Loaded", description: "All cargo has been loaded successfully.", location_description: "Industrial Area Phase-2, Prayagraj", timestamp: "2024-05-12T10:00:00Z" },
   { id: "te-7", booking_id: "bk-001", status: "IN_TRANSIT", title: "In Transit", description: "Your shipment is on the way to the destination.", location_description: "Lucknow Highway", timestamp: "2024-05-12T12:00:00Z" },

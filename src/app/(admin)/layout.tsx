@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Truck, LayoutDashboard, FileText, Users, MapPin, Settings, Bell, Search, LifeBuoy, Receipt, ChevronRight, Menu, X, UserCircle } from "lucide-react";
+import { Truck, LayoutDashboard, FileText, Users, Settings, Bell, Search, LifeBuoy, Receipt, Menu, X, UserCircle } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";

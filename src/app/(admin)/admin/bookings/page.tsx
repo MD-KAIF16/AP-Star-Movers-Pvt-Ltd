@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Filter, Eye, MoreHorizontal, ChevronDown } from "lucide-react";
+import { Search, MoreHorizontal } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
