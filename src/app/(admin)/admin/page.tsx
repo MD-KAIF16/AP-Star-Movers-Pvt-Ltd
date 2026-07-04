@@ -78,8 +78,8 @@ export default function AdminDashboard() {
                   <AreaChart data={stats.monthlyRevenue}>
                     <defs>
                       <linearGradient id="revenueGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#FF6B35" stopOpacity={0.3} />
-                        <stop offset="95%" stopColor="#FF6B35" stopOpacity={0} />
+                        <stop offset="5%" stopColor="#84CC16" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="#84CC16" stopOpacity={0} />
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" stroke="#1E293B" />
@@ -89,7 +89,7 @@ export default function AdminDashboard() {
                       contentStyle={{ backgroundColor: "#112240", border: "1px solid #1E293B", borderRadius: "12px", color: "#F8FAFC" }}
                       formatter={(value) => [`₹${Number(value).toLocaleString("en-IN")}`, "Revenue"]}
                     />
-                    <Area type="monotone" dataKey="revenue" stroke="#FF6B35" strokeWidth={2} fill="url(#revenueGradient)" />
+                    <Area type="monotone" dataKey="revenue" stroke="#84CC16" strokeWidth={2} fill="url(#revenueGradient)" />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
@@ -113,7 +113,7 @@ export default function AdminDashboard() {
                     <Tooltip
                       contentStyle={{ backgroundColor: "#112240", border: "1px solid #1E293B", borderRadius: "12px", color: "#F8FAFC" }}
                     />
-                    <Bar dataKey="count" fill="#FF6B35" radius={[0, 6, 6, 0]} />
+                    <Bar dataKey="count" fill="#84CC16" radius={[0, 6, 6, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
