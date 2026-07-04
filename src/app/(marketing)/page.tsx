@@ -65,9 +65,9 @@ const stats = [
 const SectionHeading = ({ children, subtitle, centered = false }: { children: React.ReactNode, subtitle?: string, centered?: boolean }) => (
   <div className={`mb-16 md:mb-24 relative z-10 ${centered ? 'text-center flex flex-col items-center' : ''}`}>
     {subtitle && (
-      <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-orange-500/20 bg-orange-500/5 backdrop-blur-md mb-6">
-        <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span></span>
-        <span className="text-xs font-bold text-orange-400 uppercase tracking-[0.2em]">{subtitle}</span>
+      <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-lime-500/20 bg-lime-500/5 backdrop-blur-md mb-6">
+        <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span></span>
+        <span className="text-xs font-bold text-lime-400 uppercase tracking-[0.2em]">{subtitle}</span>
       </motion.div>
     )}
     <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
@@ -138,7 +138,7 @@ Thank You.`;
   };
 
   return (
-    <div className="bg-black min-h-screen overflow-hidden selection:bg-orange-500/30 selection:text-orange-200 font-manrope">
+    <div className="bg-black min-h-screen overflow-hidden selection:bg-lime-500/30 selection:text-lime-200 font-manrope">
       
       {/* GLOBAL MOUSE GLOW */}
       <motion.div 
@@ -153,7 +153,7 @@ Thank You.`;
         {/* Cinematic Parallax Background */}
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black z-10" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent z-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-lime-500/10 via-transparent to-transparent z-10" />
           <img /* eslint-disable-next-line @next/next/no-img-element */ 
             src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop" 
             alt="Truck on Night Highway" 
@@ -165,17 +165,17 @@ Thank You.`;
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }} className="max-w-4xl mx-auto space-y-10 flex flex-col items-center">
             
             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl">
-              <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span></span>
+              <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span></span>
               <span className="text-sm font-bold text-zinc-300 uppercase tracking-widest">A P Star Movers Private Limited</span>
             </div>
             
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] tracking-tighter">
               We Deliver <br className="hidden sm:block"/>
               <span className="relative inline-block mt-2">
-                <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-300 via-orange-400 to-green-500">
+                <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-lime-300 via-lime-400 to-green-500">
                   Trust
                 </span>
-                <span className="absolute inset-0 bg-orange-500/20 blur-3xl rounded-full z-0" />
+                <span className="absolute inset-0 bg-lime-500/20 blur-3xl rounded-full z-0" />
               </span><br/>
               Across India.
             </h1>
@@ -185,7 +185,7 @@ Thank You.`;
             </p>
             
             <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 pt-4 px-4 sm:px-0 w-full sm:w-auto">
-              <button onClick={() => openBookTruckModal()} className="group relative flex items-center justify-center h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-orange-400 text-black font-extrabold text-base sm:text-lg overflow-hidden transition-all active:scale-95 sm:hover:scale-105 sm:hover:shadow-[0_0_40px_rgba(163,230,21,0.4)] w-full sm:w-auto shrink-0">
+              <button onClick={() => openBookTruckModal()} className="group relative flex items-center justify-center h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-lime-400 text-black font-extrabold text-base sm:text-lg overflow-hidden transition-all active:scale-95 sm:hover:scale-105 sm:hover:shadow-[0_0_40px_rgba(163,230,21,0.4)] w-full sm:w-auto shrink-0">
                 <div className="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 <span className="relative z-10 flex items-center gap-3">
                   Book a Truck <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -196,7 +196,7 @@ Thank You.`;
                 Get Quote
               </button>
 
-              <a href="tel:+917080815294" className="group relative flex items-center justify-center h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-transparent text-white font-bold text-base sm:text-lg hover:text-orange-400 transition-colors w-full sm:w-auto shrink-0">
+              <a href="tel:+917080815294" className="group relative flex items-center justify-center h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-transparent text-white font-bold text-base sm:text-lg hover:text-lime-400 transition-colors w-full sm:w-auto shrink-0">
                 Call Now
               </a>
             </div>
@@ -213,7 +213,7 @@ Thank You.`;
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Scroll Down</span>
           <div className="w-[1px] h-12 bg-white/10 relative overflow-hidden">
             <motion.div 
-              className="absolute top-0 left-0 w-full h-1/2 bg-orange-400"
+              className="absolute top-0 left-0 w-full h-1/2 bg-lime-400"
               animate={{ top: ["-50%", "100%"] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
             />
@@ -236,19 +236,19 @@ Thank You.`;
                   With more than a decade of specialized experience, we pride ourselves on delivering comprehensive solutions ranging from Full Truck Load (FTL) and Cold Chain Logistics to Contract and Door-to-Door Delivery.
                 </p>
                 <p>
-                  Our <strong className="text-orange-400">Mission</strong> is to ensure the absolute safety and timely delivery of commercial freight. Our <strong className="text-orange-400">Vision</strong> is to build a pan-India network fueled by customer satisfaction and uncompromising reliability. 
+                  Our <strong className="text-lime-400">Mission</strong> is to ensure the absolute safety and timely delivery of commercial freight. Our <strong className="text-lime-400">Vision</strong> is to build a pan-India network fueled by customer satisfaction and uncompromising reliability. 
                 </p>
               </div>
               
               <div className="pt-4">
-                <button onClick={() => openBookTruckModal()} className="inline-flex items-center gap-2 text-orange-400 font-bold hover:text-orange-300 transition-colors group">
+                <button onClick={() => openBookTruckModal()} className="inline-flex items-center gap-2 text-lime-400 font-bold hover:text-lime-300 transition-colors group">
                   Partner with us today <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             </motion.div>
             
             <div className="grid grid-cols-2 gap-6 relative">
-              <div className="absolute inset-0 bg-orange-500/5 blur-[100px] pointer-events-none rounded-full" />
+              <div className="absolute inset-0 bg-lime-500/5 blur-[100px] pointer-events-none rounded-full" />
               {stats.map((stat, i) => (
                 <motion.div 
                   key={i} 
@@ -256,9 +256,9 @@ Thank You.`;
                   whileInView={{ opacity: 1, y: 0 }} 
                   viewport={{ once: true, margin: "-50px" }} 
                   transition={{ delay: i * 0.1 }}
-                  className="p-8 rounded-[32px] bg-black border border-white/5 hover:border-orange-500/30 transition-colors group relative z-10"
+                  className="p-8 rounded-[32px] bg-black border border-white/5 hover:border-lime-500/30 transition-colors group relative z-10"
                 >
-                  <div className="text-3xl md:text-5xl font-black text-white mb-3 group-hover:text-orange-400 transition-colors">{stat.value}</div>
+                  <div className="text-3xl md:text-5xl font-black text-white mb-3 group-hover:text-lime-400 transition-colors">{stat.value}</div>
                   <div className="text-xs text-zinc-500 font-bold uppercase tracking-wider leading-relaxed">{stat.label}</div>
                 </motion.div>
               ))}
@@ -269,19 +269,19 @@ Thank You.`;
 
       {/* 3. CEO LEADERSHIP SECTION */}
       <section className="py-32 bg-black relative overflow-hidden border-b border-white/5">
-        <div className="absolute top-1/2 left-0 w-full h-[500px] bg-orange-500/5 blur-[120px] -translate-y-1/2 rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-0 w-full h-[500px] bg-lime-500/5 blur-[120px] -translate-y-1/2 rounded-full pointer-events-none" />
         <div className="container px-4 sm:px-6 relative z-10">
           <div className="max-w-6xl mx-auto">
             <SectionHeading subtitle="Leadership">Driven By Vision & Excellence</SectionHeading>
             
-            <div className="mt-16 bg-zinc-950 border border-white/10 rounded-[40px] p-8 md:p-16 relative overflow-hidden group hover:border-orange-500/30 transition-all duration-500">
+            <div className="mt-16 bg-zinc-950 border border-white/10 rounded-[40px] p-8 md:p-16 relative overflow-hidden group hover:border-lime-500/30 transition-all duration-500">
               <div className="absolute top-0 right-0 p-12 opacity-5">
                 <Quote className="w-64 h-64 text-white" />
               </div>
               
               <div className="grid md:grid-cols-12 gap-12 items-center relative z-10">
                 <div className="md:col-span-5 relative">
-                  <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 relative shadow-2xl shadow-black group-hover:border-orange-500/30 transition-colors">
+                  <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 relative shadow-2xl shadow-black group-hover:border-lime-500/30 transition-colors">
                     <img /* eslint-disable-next-line @next/next/no-img-element */ 
                       src="/images/ceo.png" 
                       alt="M Ayub - CEO of A P Star Movers" 
@@ -289,14 +289,14 @@ Thank You.`;
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
                   </div>
-                  <div className="absolute -bottom-6 -right-6 bg-orange-400 text-black p-6 rounded-2xl shadow-2xl border border-orange-300">
+                  <div className="absolute -bottom-6 -right-6 bg-lime-400 text-black p-6 rounded-2xl shadow-2xl border border-lime-300">
                     <h4 className="text-xl font-bold">M Ayub</h4>
                     <p className="text-sm font-extrabold uppercase tracking-widest mt-1 opacity-80">Chief Executive Officer</p>
                   </div>
                 </div>
                 
                 <div className="md:col-span-7 space-y-8">
-                  <Quote className="w-12 h-12 text-orange-400" />
+                  <Quote className="w-12 h-12 text-lime-400" />
                   <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                     &quot;Leading A P Star Movers towards innovation, reliability, and customer trust across India.&quot;
                   </h3>
@@ -323,17 +323,17 @@ Thank You.`;
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: i * 0.05, duration: 0.5 }}
-                className="group relative bg-zinc-950 border border-white/5 p-8 rounded-[32px] overflow-hidden hover:border-orange-500/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(163,230,21,0.05)]"
+                className="group relative bg-zinc-950 border border-white/5 p-8 rounded-[32px] overflow-hidden hover:border-lime-500/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(163,230,21,0.05)]"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-lime-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10 flex flex-col h-full">
-                  <div className="h-14 w-14 rounded-2xl bg-black border border-white/10 flex items-center justify-center mb-6 group-hover:bg-orange-400 group-hover:border-orange-400 transition-all duration-500">
-                    <s.icon className="h-6 w-6 text-orange-400 group-hover:text-black transition-colors duration-500" />
+                  <div className="h-14 w-14 rounded-2xl bg-black border border-white/10 flex items-center justify-center mb-6 group-hover:bg-lime-400 group-hover:border-lime-400 transition-all duration-500">
+                    <s.icon className="h-6 w-6 text-lime-400 group-hover:text-black transition-colors duration-500" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">{s.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">{s.title}</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed font-medium mb-6 flex-grow">{s.desc}</p>
-                  <button onClick={() => openBookTruckModal()} className="inline-flex items-center gap-2 text-sm font-bold text-white group-hover:text-orange-400 transition-colors mt-auto self-start">
+                  <button onClick={() => openBookTruckModal()} className="inline-flex items-center gap-2 text-sm font-bold text-white group-hover:text-lime-400 transition-colors mt-auto self-start">
                     Get Quote <ArrowRight className="h-4 w-4" />
                   </button>
                 </div>
@@ -356,10 +356,10 @@ Thank You.`;
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="bg-black border border-white/5 rounded-2xl p-6 text-center group hover:border-orange-500/30 hover:bg-zinc-900/50 transition-all"
+                className="bg-black border border-white/5 rounded-2xl p-6 text-center group hover:border-lime-500/30 hover:bg-zinc-900/50 transition-all"
               >
-                <div className="w-12 h-12 mx-auto rounded-full bg-white/5 flex items-center justify-center mb-4 group-hover:bg-orange-400/10 transition-colors">
-                  <reason.icon className="w-5 h-5 text-zinc-400 group-hover:text-orange-400 transition-colors" />
+                <div className="w-12 h-12 mx-auto rounded-full bg-white/5 flex items-center justify-center mb-4 group-hover:bg-lime-400/10 transition-colors">
+                  <reason.icon className="w-5 h-5 text-zinc-400 group-hover:text-lime-400 transition-colors" />
                 </div>
                 <h4 className="text-white font-bold text-sm leading-snug">{reason.text}</h4>
               </motion.div>
@@ -397,16 +397,16 @@ Thank You.`;
                 whileInView={{ opacity: 1, y: 0 }} 
                 viewport={{ once: true, margin: "-50px" }} 
                 transition={{ delay: i * 0.15 }}
-                className="bg-black border border-white/5 p-8 rounded-[32px] text-center group hover:border-orange-500/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(163,230,21,0.15)]"
+                className="bg-black border border-white/5 p-8 rounded-[32px] text-center group hover:border-lime-500/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(163,230,21,0.15)]"
               >
-                <div className="w-24 h-24 mx-auto rounded-full bg-zinc-900 border-2 border-white/10 mb-6 flex items-center justify-center group-hover:border-orange-400 transition-colors duration-500 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <span className="text-2xl font-black text-white/20 group-hover:text-orange-400 transition-colors duration-500">
+                <div className="w-24 h-24 mx-auto rounded-full bg-zinc-900 border-2 border-white/10 mb-6 flex items-center justify-center group-hover:border-lime-400 transition-colors duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-lime-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <span className="text-2xl font-black text-white/20 group-hover:text-lime-400 transition-colors duration-500">
                     {director.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
                 <h4 className="text-xl font-bold text-white mb-1">{director.name}</h4>
-                <p className="text-orange-400 font-bold uppercase tracking-widest text-[10px]">{director.role}</p>
+                <p className="text-lime-400 font-bold uppercase tracking-widest text-[10px]">{director.role}</p>
               </motion.div>
             ))}
           </div>
@@ -421,8 +421,8 @@ Thank You.`;
           <div className="grid lg:grid-cols-12 gap-12 mt-16">
             
             {/* Corporate Info Glass Card */}
-            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="lg:col-span-5 bg-zinc-950 border border-white/10 rounded-[40px] p-10 relative overflow-hidden group hover:border-orange-500/30 transition-colors flex flex-col justify-between">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 blur-[80px] rounded-full pointer-events-none" />
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="lg:col-span-5 bg-zinc-950 border border-white/10 rounded-[40px] p-10 relative overflow-hidden group hover:border-lime-500/30 transition-colors flex flex-col justify-between">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-lime-500/10 blur-[80px] rounded-full pointer-events-none" />
               
               <div>
                 <h3 className="text-3xl font-bold text-white mb-8">A P Star Movers <br/><span className="text-zinc-500 text-xl">Private Limited</span></h3>
@@ -430,7 +430,7 @@ Thank You.`;
                 <div className="space-y-8 relative z-10">
                   <div className="flex gap-4">
                     <div className="w-12 h-12 rounded-full bg-black border border-white/10 flex items-center justify-center shrink-0">
-                      <Warehouse className="w-5 h-5 text-orange-400" />
+                      <Warehouse className="w-5 h-5 text-lime-400" />
                     </div>
                     <div>
                       <h4 className="text-white font-bold mb-1">Corporate Office</h4>
@@ -440,21 +440,21 @@ Thank You.`;
                   
                   <div className="flex gap-4">
                     <div className="w-12 h-12 rounded-full bg-black border border-white/10 flex items-center justify-center shrink-0">
-                      <Phone className="w-5 h-5 text-orange-400" />
+                      <Phone className="w-5 h-5 text-lime-400" />
                     </div>
                     <div>
                       <h4 className="text-white font-bold mb-1">Phone</h4>
-                      <a href="tel:+917080815294" className="text-zinc-400 text-sm font-medium hover:text-orange-400 transition-colors">+91 7080815294</a>
+                      <a href="tel:+917080815294" className="text-zinc-400 text-sm font-medium hover:text-lime-400 transition-colors">+91 7080815294</a>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
                     <div className="w-12 h-12 rounded-full bg-black border border-white/10 flex items-center justify-center shrink-0">
-                      <Mail className="w-5 h-5 text-orange-400" />
+                      <Mail className="w-5 h-5 text-lime-400" />
                     </div>
                     <div>
                       <h4 className="text-white font-bold mb-1">Email</h4>
-                      <a href="mailto:zaibapstar786@gmail.com" className="text-zinc-400 text-sm font-medium hover:text-orange-400 transition-colors">zaibapstar786@gmail.com</a>
+                      <a href="mailto:zaibapstar786@gmail.com" className="text-zinc-400 text-sm font-medium hover:text-lime-400 transition-colors">zaibapstar786@gmail.com</a>
                     </div>
                   </div>
                 </div>
@@ -467,7 +467,7 @@ Thank You.`;
                 </div>
                 <div>
                   <div className="text-zinc-500 mb-1 text-xs uppercase tracking-wider">Status</div>
-                  <div className="text-orange-400 font-bold">Active Pvt Ltd</div>
+                  <div className="text-lime-400 font-bold">Active Pvt Ltd</div>
                 </div>
                 <div className="col-span-2">
                   <div className="text-zinc-500 mb-1 text-xs uppercase tracking-wider">CIN</div>
@@ -488,27 +488,27 @@ Thank You.`;
                 <form className="space-y-6" onSubmit={handleContactSubmit}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="relative group">
-                      <input type="text" id="name" name="name" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-400 peer transition-colors" placeholder=" " />
-                      <label htmlFor="name" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-orange-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Your Name</label>
+                      <input type="text" id="name" name="name" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-lime-400 peer transition-colors" placeholder=" " />
+                      <label htmlFor="name" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-lime-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Your Name</label>
                     </div>
                     <div className="relative group">
-                      <input type="tel" id="phone" name="phone" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-400 peer transition-colors" placeholder=" " />
-                      <label htmlFor="phone" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-orange-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Phone Number</label>
+                      <input type="tel" id="phone" name="phone" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-lime-400 peer transition-colors" placeholder=" " />
+                      <label htmlFor="phone" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-lime-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Phone Number</label>
                     </div>
                   </div>
                   <div className="relative group">
-                    <input type="email" id="email" name="email" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-400 peer transition-colors" placeholder=" " />
-                    <label htmlFor="email" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-orange-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Email Address</label>
+                    <input type="email" id="email" name="email" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-lime-400 peer transition-colors" placeholder=" " />
+                    <label htmlFor="email" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-lime-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Email Address</label>
                   </div>
                   <div className="relative group">
-                    <input type="text" id="subject" name="subject" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-400 peer transition-colors" placeholder=" " />
-                    <label htmlFor="subject" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-orange-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Subject</label>
+                    <input type="text" id="subject" name="subject" required className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-lime-400 peer transition-colors" placeholder=" " />
+                    <label htmlFor="subject" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-lime-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Subject</label>
                   </div>
                   <div className="relative group">
-                    <textarea id="message" name="message" required rows={4} className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-400 peer transition-colors resize-none" placeholder=" "></textarea>
-                    <label htmlFor="message" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-orange-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Message</label>
+                    <textarea id="message" name="message" required rows={4} className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-lime-400 peer transition-colors resize-none" placeholder=" "></textarea>
+                    <label htmlFor="message" className="absolute left-6 top-4 text-zinc-500 transition-all peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-lime-400 peer-focus:bg-zinc-950 peer-focus:px-2 peer-valid:-top-3 peer-valid:left-4 peer-valid:text-xs peer-valid:bg-zinc-950 peer-valid:px-2 pointer-events-none">Message</label>
                   </div>
-                  <button type="submit" className="w-full py-5 rounded-full bg-orange-400 text-black font-extrabold text-lg hover:bg-orange-300 hover:shadow-[0_0_30px_rgba(163,230,21,0.3)] transition-all">
+                  <button type="submit" className="w-full py-5 rounded-full bg-lime-400 text-black font-extrabold text-lg hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,21,0.3)] transition-all">
                     Send on WhatsApp
                   </button>
                 </form>
@@ -518,7 +518,7 @@ Thank You.`;
                 <a href="https://wa.me/917080815294" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#25D366]/20 hover:border-[#25D366]/50 hover:text-[#25D366] transition-all">
                   <MessageCircle className="w-5 h-5" /> WhatsApp
                 </a>
-                <a href="tel:+917080815294" className="flex items-center justify-center gap-3 py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-orange-500/20 hover:border-orange-400/50 hover:text-orange-400 transition-all">
+                <a href="tel:+917080815294" className="flex items-center justify-center gap-3 py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-lime-500/20 hover:border-lime-400/50 hover:text-lime-400 transition-all">
                   <Phone className="w-5 h-5" /> Call Now
                 </a>
               </div>
@@ -530,24 +530,24 @@ Thank You.`;
 
       {/* 9. PREMIUM CTA SECTION */}
       <section className="relative py-40 overflow-hidden border-t border-white/5 bg-zinc-950">
-        <div className="absolute inset-0 bg-orange-500/5" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-500/20 via-transparent to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-lime-500/5" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-lime-500/20 via-transparent to-transparent opacity-60" />
         
         <div className="container px-4 sm:px-6 relative z-10 flex flex-col items-center text-center">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-orange-500/30 bg-black/50 backdrop-blur-xl mb-8">
-              <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span></span>
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-widest">Ready to scale?</span>
+            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-lime-500/30 bg-black/50 backdrop-blur-xl mb-8">
+              <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span></span>
+              <span className="text-sm font-bold text-lime-400 uppercase tracking-widest">Ready to scale?</span>
             </div>
             
-            <h2 className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tight leading-[1.05]">Let&apos;s Move Your <br/>Business <span className="text-orange-400">Forward.</span></h2>
+            <h2 className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tight leading-[1.05]">Let&apos;s Move Your <br/>Business <span className="text-lime-400">Forward.</span></h2>
             
             <p className="text-xl md:text-2xl text-zinc-400 mb-16 max-w-3xl mx-auto font-medium">
               Join enterprise clients who trust A P Star Movers for seamless, Pan-India logistics and commercial transportation.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button onClick={() => openBookTruckModal()} className="relative group overflow-hidden rounded-full bg-orange-400 px-12 py-6 text-xl font-black text-black transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(163,230,21,0.5)]">
+              <button onClick={() => openBookTruckModal()} className="relative group overflow-hidden rounded-full bg-lime-400 px-12 py-6 text-xl font-black text-black transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(163,230,21,0.5)]">
                 <span className="relative z-10 flex items-center gap-3">
                   Book Your Truck Now <ArrowRight className="h-6 w-6 group-hover:translate-x-2 transition-transform" />
                 </span>

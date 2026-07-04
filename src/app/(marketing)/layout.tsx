@@ -61,7 +61,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
 
   return (
     <SmoothScroll>
-      <div className="flex flex-col min-h-screen bg-black text-white selection:bg-orange-500/30 selection:text-orange-200 font-manrope antialiased tracking-tight">
+      <div className="flex flex-col min-h-screen bg-black text-white selection:bg-lime-500/30 selection:text-lime-200 font-manrope antialiased tracking-tight">
         
         {/* Premium Floating Navbar */}
         <header className={`fixed top-0 z-50 w-full transition-all duration-500 ${scrolled ? 'pt-4' : 'pt-6'}`}>
@@ -71,8 +71,8 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
               {/* Logo */}
               <Link href="/" className="flex items-center gap-3 group relative z-50">
                 <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 border border-white/10 overflow-hidden transition-transform duration-500 group-hover:scale-105">
-                  <div className="absolute inset-0 bg-orange-500/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <Truck className="h-5 w-5 text-orange-400 relative z-10" />
+                  <div className="absolute inset-0 bg-lime-500/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <Truck className="h-5 w-5 text-lime-400 relative z-10" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-lg font-bold tracking-tight text-white leading-none">A P STAR</span>
@@ -99,12 +99,12 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
                         />
                       )}
                       
-                      <span className={`relative z-10 transition-colors duration-300 ${isActive ? 'text-orange-400 drop-shadow-[0_0_8px_rgba(163,230,21,0.5)]' : 'text-zinc-300 group-hover:text-white'}`}>
+                      <span className={`relative z-10 transition-colors duration-300 ${isActive ? 'text-lime-400 drop-shadow-[0_0_8px_rgba(163,230,21,0.5)]' : 'text-zinc-300 group-hover:text-white'}`}>
                         {link.name}
                       </span>
                       
                       {/* Premium Hover Glow Line */}
-                      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-orange-400 opacity-0 group-hover:w-3/4 group-hover:opacity-100 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(163,230,21,0.8)] rounded-full" />
+                      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-lime-400 opacity-0 group-hover:w-3/4 group-hover:opacity-100 transition-all duration-300 ease-out shadow-[0_0_8px_rgba(163,230,21,0.8)] rounded-full" />
                     </Link>
                   );
                 })}
@@ -112,7 +112,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
 
               {/* Desktop CTA */}
               <div className="hidden lg:flex items-center gap-4 relative z-50">
-                <button onClick={() => openBookTruckModal()} className="group relative flex items-center justify-center h-10 px-6 rounded-full bg-orange-400 text-black font-bold text-sm overflow-hidden transition-transform hover:scale-105">
+                <button onClick={() => openBookTruckModal()} className="group relative flex items-center justify-center h-10 px-6 rounded-full bg-lime-400 text-black font-bold text-sm overflow-hidden transition-transform hover:scale-105">
                   <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                   <span className="relative z-10 flex items-center gap-2">Book Truck</span>
                 </button>
@@ -167,7 +167,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
                         <Link 
                           href={link.href} 
                           onClick={(e) => handleNavClick(e, link.href, link.id)}
-                          className={`text-2xl sm:text-3xl font-black block transition-all ${isActive ? 'text-orange-400 drop-shadow-[0_0_15px_rgba(163,230,21,0.3)] translate-x-2' : 'text-white hover:text-orange-400'}`}
+                          className={`text-2xl sm:text-3xl font-black block transition-all ${isActive ? 'text-lime-400 drop-shadow-[0_0_15px_rgba(163,230,21,0.3)] translate-x-2' : 'text-white hover:text-lime-400'}`}
                         >
                           {link.name}
                         </Link>
@@ -184,11 +184,11 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
               >
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-3 text-zinc-400">
-                    <Phone className="w-5 h-5 text-orange-400" />
+                    <Phone className="w-5 h-5 text-lime-400" />
                     <span className="font-bold">+91 7080815294</span>
                   </div>
                   <div className="flex items-center gap-3 text-zinc-400">
-                    <Mail className="w-5 h-5 text-orange-400" />
+                    <Mail className="w-5 h-5 text-lime-400" />
                     <span className="font-bold">zaibapstar786@gmail.com</span>
                   </div>
                   <button 
@@ -196,7 +196,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
                       setMobileMenuOpen(false);
                       openBookTruckModal();
                     }}
-                    className="mt-4 flex items-center justify-center w-full py-5 rounded-full bg-orange-400 text-black font-extrabold text-lg transition-transform active:scale-95"
+                    className="mt-4 flex items-center justify-center w-full py-5 rounded-full bg-lime-400 text-black font-extrabold text-lg transition-transform active:scale-95"
                   >
                     Book a Truck Now
                   </button>
@@ -219,15 +219,15 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
         {/* Premium Footer */}
         <footer className="bg-zinc-950 pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
           {/* Subtle Glows */}
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/5 blur-[120px] rounded-full pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-500/5 blur-[120px] rounded-full pointer-events-none" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-lime-500/5 blur-[120px] rounded-full pointer-events-none" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-lime-500/5 blur-[120px] rounded-full pointer-events-none" />
 
           <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16 px-6">
             
             <div className="lg:col-span-4 space-y-8">
               <Link href="/" className="flex items-center gap-3 group inline-flex">
                 <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900 border border-white/10 overflow-hidden">
-                  <Truck className="h-6 w-6 text-orange-400" />
+                  <Truck className="h-6 w-6 text-lime-400" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-tight text-white leading-none">A P STAR</span>
@@ -239,11 +239,11 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
               </p>
               <div className="space-y-3 pt-4">
                 <p className="text-sm text-zinc-400 flex items-center gap-3">
-                  <span className="h-8 w-8 rounded-full bg-white/5 flex items-center justify-center"><Phone className="h-4 w-4 text-orange-400" /></span>
+                  <span className="h-8 w-8 rounded-full bg-white/5 flex items-center justify-center"><Phone className="h-4 w-4 text-lime-400" /></span>
                   +91 7080815294
                 </p>
                 <p className="text-sm text-zinc-400 flex items-center gap-3">
-                  <span className="h-8 w-8 rounded-full bg-white/5 flex items-center justify-center"><Mail className="h-4 w-4 text-orange-400" /></span>
+                  <span className="h-8 w-8 rounded-full bg-white/5 flex items-center justify-center"><Mail className="h-4 w-4 text-lime-400" /></span>
                   zaibapstar786@gmail.com
                 </p>
               </div>
@@ -252,22 +252,22 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
             <div className="lg:col-span-2">
               <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Quick Links</h4>
               <ul className="space-y-4 text-sm font-medium text-zinc-400">
-                <li><Link href="/#about" onClick={(e) => handleNavClick(e, "/#about", "about")} className="hover:text-orange-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> About Us</Link></li>
-                <li><Link href="/#services" onClick={(e) => handleNavClick(e, "/#services", "services")} className="hover:text-orange-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Services</Link></li>
-                <li><Link href="/#fleet" onClick={(e) => handleNavClick(e, "/#fleet", "fleet")} className="hover:text-orange-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Fleet</Link></li>
-                <li><Link href="/#why-us" onClick={(e) => handleNavClick(e, "/#why-us", "why-us")} className="hover:text-orange-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Why Us</Link></li>
-                <li><button onClick={() => openBookTruckModal()} className="hover:text-orange-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Book Truck</button></li>
+                <li><Link href="/#about" onClick={(e) => handleNavClick(e, "/#about", "about")} className="hover:text-lime-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> About Us</Link></li>
+                <li><Link href="/#services" onClick={(e) => handleNavClick(e, "/#services", "services")} className="hover:text-lime-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Services</Link></li>
+                <li><Link href="/#fleet" onClick={(e) => handleNavClick(e, "/#fleet", "fleet")} className="hover:text-lime-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Fleet</Link></li>
+                <li><Link href="/#why-us" onClick={(e) => handleNavClick(e, "/#why-us", "why-us")} className="hover:text-lime-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Why Us</Link></li>
+                <li><button onClick={() => openBookTruckModal()} className="hover:text-lime-400 transition-colors inline-flex items-center gap-2 group cursor-pointer"><ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /> Book Truck</button></li>
               </ul>
             </div>
 
             <div className="lg:col-span-3">
               <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Top Services</h4>
               <ul className="space-y-4 text-sm font-medium text-zinc-400">
-                <li><Link href="/#services" className="hover:text-orange-400 transition-colors">Transportation Services</Link></li>
-                <li><Link href="/#services" className="hover:text-orange-400 transition-colors">Logistics Services</Link></li>
-                <li><Link href="/#services" className="hover:text-orange-400 transition-colors">Full Truck Load (FTL)</Link></li>
-                <li><Link href="/#services" className="hover:text-orange-400 transition-colors">Cold Chain Logistics</Link></li>
-                <li><Link href="/#services" className="hover:text-orange-400 transition-colors">Supply Chain Management</Link></li>
+                <li><Link href="/#services" className="hover:text-lime-400 transition-colors">Transportation Services</Link></li>
+                <li><Link href="/#services" className="hover:text-lime-400 transition-colors">Logistics Services</Link></li>
+                <li><Link href="/#services" className="hover:text-lime-400 transition-colors">Full Truck Load (FTL)</Link></li>
+                <li><Link href="/#services" className="hover:text-lime-400 transition-colors">Cold Chain Logistics</Link></li>
+                <li><Link href="/#services" className="hover:text-lime-400 transition-colors">Supply Chain Management</Link></li>
               </ul>
             </div>
 
@@ -281,8 +281,8 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
                   Near Banney Miya Ka Bagh,<br/>
                   Dhoomanganj, Prayagraj,<br/>
                   Uttar Pradesh - 211011<br/>
-                  <span className="block mt-4 text-xs text-orange-400 font-bold">CIN: U60200UP2014PTC063248</span>
-                  <span className="block mt-1 text-xs text-orange-400 font-bold">GST: 09AAMCA5859Q1ZM</span>
+                  <span className="block mt-4 text-xs text-lime-400 font-bold">CIN: U60200UP2014PTC063248</span>
+                  <span className="block mt-1 text-xs text-lime-400 font-bold">GST: 09AAMCA5859Q1ZM</span>
                   <div className="flex gap-4 mt-3 pt-3 border-t border-white/10">
                     <div>
                       <span className="block text-[10px] text-zinc-500 uppercase tracking-widest">Auth Capital</span>
@@ -305,7 +305,7 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
             </p>
             <button onClick={scrollToTop} className="group flex items-center gap-3 text-sm font-bold text-zinc-400 hover:text-white transition-colors">
               Back to top 
-              <span className="h-10 w-10 rounded-full bg-white/5 group-hover:bg-orange-400 group-hover:text-black flex items-center justify-center transition-colors">
+              <span className="h-10 w-10 rounded-full bg-white/5 group-hover:bg-lime-400 group-hover:text-black flex items-center justify-center transition-colors">
                 <ArrowUp className="h-4 w-4" />
               </span>
             </button>

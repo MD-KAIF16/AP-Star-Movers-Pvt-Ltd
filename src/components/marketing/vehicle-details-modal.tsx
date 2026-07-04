@@ -66,7 +66,7 @@ export function VehicleDetailsModal() {
                 {/* Hero Content */}
                 <div className="absolute bottom-0 left-0 p-6 md:p-12 z-20 w-full max-w-4xl">
                   <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 font-bold text-xs uppercase tracking-widest mb-4 backdrop-blur-md">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-lime-500/20 border border-lime-500/30 text-lime-400 font-bold text-xs uppercase tracking-widest mb-4 backdrop-blur-md">
                       {selectedVehicle.capacity}
                     </div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-4 tracking-tighter">
@@ -89,10 +89,10 @@ export function VehicleDetailsModal() {
                     <p className="text-xl text-zinc-400 leading-relaxed font-medium">
                       {selectedVehicle.overview}
                     </p>
-                    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-orange-500/30 transition-colors">
+                    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-lime-500/30 transition-colors">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-full bg-orange-500/10 flex items-center justify-center">
-                          <PackageCheck className="w-6 h-6 text-orange-400" />
+                        <div className="w-12 h-12 rounded-full bg-lime-500/10 flex items-center justify-center">
+                          <PackageCheck className="w-6 h-6 text-lime-400" />
                         </div>
                         <h4 className="text-lg font-bold text-white">Best Use Cases</h4>
                       </div>
@@ -102,17 +102,17 @@ export function VehicleDetailsModal() {
                   
                   <div className="grid grid-cols-2 gap-4 md:gap-6">
                     <div className="bg-zinc-950 border border-white/5 rounded-3xl p-6 text-center hover:bg-zinc-900 transition-colors group">
-                      <Maximize2 className="w-8 h-8 text-zinc-500 mx-auto mb-4 group-hover:text-orange-400 transition-colors" />
+                      <Maximize2 className="w-8 h-8 text-zinc-500 mx-auto mb-4 group-hover:text-lime-400 transition-colors" />
                       <div className="text-xs text-zinc-500 uppercase tracking-widest font-bold mb-2">Dimensions</div>
                       <div className="text-white font-bold text-sm md:text-base">{selectedVehicle.approxDimensions}</div>
                     </div>
                     <div className="bg-zinc-950 border border-white/5 rounded-3xl p-6 text-center hover:bg-zinc-900 transition-colors group">
-                      <Route className="w-8 h-8 text-zinc-500 mx-auto mb-4 group-hover:text-orange-400 transition-colors" />
+                      <Route className="w-8 h-8 text-zinc-500 mx-auto mb-4 group-hover:text-lime-400 transition-colors" />
                       <div className="text-xs text-zinc-500 uppercase tracking-widest font-bold mb-2">Ideal Routes</div>
                       <div className="text-white font-bold text-sm md:text-base">{selectedVehicle.idealRoutes}</div>
                     </div>
                     <div className="col-span-2 bg-zinc-950 border border-white/5 rounded-3xl p-6 text-center hover:bg-zinc-900 transition-colors group">
-                      <Box className="w-8 h-8 text-zinc-500 mx-auto mb-4 group-hover:text-orange-400 transition-colors" />
+                      <Box className="w-8 h-8 text-zinc-500 mx-auto mb-4 group-hover:text-lime-400 transition-colors" />
                       <div className="text-xs text-zinc-500 uppercase tracking-widest font-bold mb-2">Suitable Goods</div>
                       <div className="text-white font-bold text-sm md:text-base px-4">{selectedVehicle.suitableGoods}</div>
                     </div>
@@ -131,8 +131,8 @@ export function VehicleDetailsModal() {
                         </div>
                       ))}
                     </div>
-                    <div className="bg-orange-500/10 border border-orange-500/20 rounded-2xl p-6 flex items-start gap-4">
-                      <ShieldCheck className="w-6 h-6 text-orange-400 shrink-0 mt-1" />
+                    <div className="bg-lime-500/10 border border-lime-500/20 rounded-2xl p-6 flex items-start gap-4">
+                      <ShieldCheck className="w-6 h-6 text-lime-400 shrink-0 mt-1" />
                       <div>
                         <h4 className="text-white font-bold mb-1">Insurance & Safety</h4>
                         <p className="text-sm text-zinc-400 leading-relaxed">{selectedVehicle.insuranceCoverage}</p>
@@ -144,9 +144,9 @@ export function VehicleDetailsModal() {
                     <h3 className="text-3xl font-bold text-white tracking-tight">Key Advantages</h3>
                     <div className="grid sm:grid-cols-2 gap-4">
                       {selectedVehicle.features.map((feature, i) => (
-                        <div key={i} className="bg-zinc-950 border border-white/5 p-6 rounded-3xl hover:border-orange-500/30 transition-all flex items-start gap-4 group">
-                          <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-orange-400/20 transition-colors">
-                            <Zap className="w-5 h-5 text-zinc-400 group-hover:text-orange-400 transition-colors" />
+                        <div key={i} className="bg-zinc-950 border border-white/5 p-6 rounded-3xl hover:border-lime-500/30 transition-all flex items-start gap-4 group">
+                          <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-lime-400/20 transition-colors">
+                            <Zap className="w-5 h-5 text-zinc-400 group-hover:text-lime-400 transition-colors" />
                           </div>
                           <p className="text-zinc-300 font-medium text-sm leading-relaxed pt-1">{feature}</p>
                         </div>
@@ -158,17 +158,17 @@ export function VehicleDetailsModal() {
                 {/* 3. Deep Dive Info Cards */}
                 <section className="grid md:grid-cols-3 gap-6">
                   <div className="bg-black border border-white/10 rounded-[32px] p-8">
-                    <Map className="w-8 h-8 text-orange-400 mb-6" />
+                    <Map className="w-8 h-8 text-lime-400 mb-6" />
                     <h4 className="text-white font-bold text-lg mb-3">GPS Tracking</h4>
                     <p className="text-zinc-400 text-sm leading-relaxed">{selectedVehicle.gpsTracking}</p>
                   </div>
                   <div className="bg-black border border-white/10 rounded-[32px] p-8">
-                    <Truck className="w-8 h-8 text-orange-400 mb-6" />
+                    <Truck className="w-8 h-8 text-lime-400 mb-6" />
                     <h4 className="text-white font-bold text-lg mb-3">Availability</h4>
                     <p className="text-zinc-400 text-sm leading-relaxed">{selectedVehicle.availability}</p>
                   </div>
                   <div className="bg-black border border-white/10 rounded-[32px] p-8">
-                    <Info className="w-8 h-8 text-orange-400 mb-6" />
+                    <Info className="w-8 h-8 text-lime-400 mb-6" />
                     <h4 className="text-white font-bold text-lg mb-3">Loading Support</h4>
                     <p className="text-zinc-400 text-sm leading-relaxed">{selectedVehicle.loadingSupport}</p>
                   </div>
@@ -188,8 +188,8 @@ export function VehicleDetailsModal() {
                           onClick={() => setActiveFaq(activeFaq === i ? null : i)}
                           className="w-full flex items-center justify-between p-6 text-left"
                         >
-                          <span className={`font-bold text-lg transition-colors ${activeFaq === i ? 'text-orange-400' : 'text-white'}`}>{faq.q}</span>
-                          {activeFaq === i ? <ChevronUp className="w-5 h-5 text-orange-400 shrink-0" /> : <ChevronDown className="w-5 h-5 text-zinc-500 shrink-0" />}
+                          <span className={`font-bold text-lg transition-colors ${activeFaq === i ? 'text-lime-400' : 'text-white'}`}>{faq.q}</span>
+                          {activeFaq === i ? <ChevronUp className="w-5 h-5 text-lime-400 shrink-0" /> : <ChevronDown className="w-5 h-5 text-zinc-500 shrink-0" />}
                         </button>
                         <AnimatePresence>
                           {activeFaq === i && (
@@ -230,7 +230,7 @@ export function VehicleDetailsModal() {
                 <div className="hidden lg:block">
                   <div className="text-zinc-400 text-sm font-bold uppercase tracking-wider mb-1">Status</div>
                   <div className="text-white font-bold flex items-center gap-2">
-                    <span className="relative flex h-3 w-3"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span><span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span></span>
+                    <span className="relative flex h-3 w-3"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span><span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500"></span></span>
                     Available for Booking
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export function VehicleDetailsModal() {
                     Get Quote
                   </button>
 
-                  <button onClick={() => { closeVehicleDetailsModal(); openBookTruckModal(selectedVehicle.name); }} className="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-orange-400 text-black font-extrabold hover:bg-orange-300 hover:shadow-[0_0_30px_rgba(163,230,21,0.3)] transition-all shrink-0 w-full sm:w-auto">
+                  <button onClick={() => { closeVehicleDetailsModal(); openBookTruckModal(selectedVehicle.name); }} className="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-lime-400 text-black font-extrabold hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,21,0.3)] transition-all shrink-0 w-full sm:w-auto">
                     Book This Vehicle
                   </button>
                 </div>

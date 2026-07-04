@@ -190,7 +190,7 @@ export default function CustomerDashboard() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.4 }}
       >
-        <Card className="bg-gradient-to-r from-primary to-orange-600 text-primary-foreground border-0">
+        <Card className="bg-gradient-to-r from-primary to-lime-600 text-primary-foreground border-0">
           <CardContent className="p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <h3 className="text-xl font-bold">Need Heavy Transport?</h3>

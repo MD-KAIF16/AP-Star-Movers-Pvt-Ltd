@@ -56,7 +56,7 @@ Please contact me.`;
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
             className="relative w-full max-w-md bg-zinc-950 border border-white/10 rounded-[32px] p-8 overflow-hidden shadow-2xl"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 blur-[80px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-lime-500/10 blur-[80px] rounded-full pointer-events-none" />
             
             <button 
               onClick={closeBookTruckModal}
@@ -66,7 +66,7 @@ Please contact me.`;
             </button>
 
             <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6">
-              <Truck className="w-8 h-8 text-orange-400" />
+              <Truck className="w-8 h-8 text-lime-400" />
             </div>
 
             <h3 className="text-2xl font-black text-white mb-2">Book Your Truck</h3>
@@ -93,16 +93,16 @@ Please contact me.`;
 
               <button 
                 onClick={handleCallNow}
-                className="w-full group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/50 hover:bg-orange-500/10 transition-all duration-300"
+                className="w-full group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-lime-500/50 hover:bg-lime-500/10 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center shrink-0">
-                  <Phone className="w-6 h-6 text-orange-400" />
+                <div className="w-12 h-12 rounded-full bg-lime-500/20 flex items-center justify-center shrink-0">
+                  <Phone className="w-6 h-6 text-lime-400" />
                 </div>
                 <div className="text-left flex-grow">
                   <span className="block text-white font-bold text-lg">Call Now</span>
                   <span className="block text-zinc-500 text-sm">+91 7080815294</span>
                 </div>
-                <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover:border-orange-400 group-hover:bg-orange-400 transition-colors">
+                <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover:border-lime-400 group-hover:bg-lime-400 transition-colors">
                   <ArrowRight className="w-4 h-4 text-white group-hover:text-black" />
                 </div>
               </button>
